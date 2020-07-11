@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Monopoly.Views.PlayerPage"
+             NavigationPage.HasNavigationBar="false" >
+
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+
+        <!--Barre de menu-->
+        <BoxView Grid.Row="0" BackgroundColor="Black"/>
+        <ContentView
+            Grid.Row="0"
+            VerticalOptions="Fill"
+            Margin="2"
+            BackgroundColor="White">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label 
+                    x:Name="lblPlayerName"
+                    Grid.Column="0"
+                    Text="Nom du joueur"
+                    FontSize="12"
+                    HorizontalTextAlignment="End"
+                    VerticalTextAlignment="Center"
+                    Padding="20,0,10,0"/>
+
+                <Label 
+                    x:Name="lblPlayerNumber"
+                    Grid.Column="1"
+                    Text="Numero du joueur"
+                    FontSize="12"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+
+                <Label 
+                    x:Name="lblPlayerBudget"
+                    Grid.Column="2"
+                    Text="1000000 M"
+                    FontSize="12"
+                    HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="Center"
+                    Padding="10,0,20,0"/>
+            </Grid>
+        </ContentView>
+
+        <!--Case centrale-->
+            <!--Sur la case centrale (row = 1), il y a plusieur affichage possible-->
+        <BoxView Grid.Row="1" BackgroundColor="Black"/>
+        
+            <!--Lancement des dès-->
+        <ContentView
+            x:Name="ContentLaunchDice"
+            Grid.Row="1"
+            Margin="2"
+            BackgroundColor="White">
+
+            <Image 
+                x:Name="imgLancerDes"
+                Source="LancerDes.jpg"
+                Margin="50">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImgLancerDesTapped" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </ContentView>
+
+            <!--Resultat des dès-->
+        <Grid
+            x:Name="GridResultDice"
+            Grid.Row="1"
+            Margin="2"
+            BackgroundColor="White"
+            IsVisible="false"
+            Opacity="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <!--Resultat-->
+            <Label
+                x:Name="lblResultDice"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="0"
+                Text="Vous avez fait "
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+
+            <!--Dés-->
+            <Image
+                x:Name="imgResultDe1"
+                Grid.Column="0"
+                Grid.Row="1"
+                Opacity="0"
+                Margin="10"
+                Source="Dice1.png"/>
+            
+            <Image
+                x:Name="imgResultDe2"
+                Grid.Column="2"
+                Grid.Row="1"
+                Margin="10"
+                Opacity="0"
+                Source="Dice1.png"/>
+
+            <!--Chargement-->
+            <!--<Image
+                x:Name="imgLoad"
+                Grid.Column="1"
+                Grid.Row="2"
+                VerticalOptions="Center"
+                Source="Load.jpg"/>
+            
+            <Label
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Grid.Row="2"
+                Text="Déplacement de votre pion en cours !"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center"/>-->
+
+            <Button
+                x:Name="btnAcheter"
+                Grid.Column="0"
+                Grid.Row="2"
+                Text="Acheter"
+                Margin="10,10,0,10"
+                IsVisible="false"
+                Clicked="btnAcheter_Clicked"/>
+
+            <Button
+                x:Name="btnFinTour"
+                Grid.Column="2"
+                Grid.Row="2"
+                Margin="0,10,10,10"
+                Text="Fin du tour"
+                IsVisible="false"
+                Clicked="btnFinTour_Clicked"/>
+
+
+
+        </Grid>
+        
+            <!--Affichage d'une carte-->
+
+
+        <!--Propriete du joueur-->
+        <BoxView Grid.Row="2" BackgroundColor="Black"/>
+        <ScrollView
+            x:Name="svProperties"
+            Grid.Row="2"
+            HorizontalOptions="FillAndExpand" 
+            Orientation="Horizontal" 
+            VerticalOptions="Fill"
+            Margin="2"
+            BackgroundColor="White">
+            <StackLayout 
+                x:Name="StackGallery" 
+                Orientation="Horizontal" 
+                HorizontalOptions="Center">
+                <Image HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" BackgroundColor="Red" IsVisible="false">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageNameTapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label
+                    x:Name="lblNoProperty"
+                    Text="Vous ne possédez auncune propriété !"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

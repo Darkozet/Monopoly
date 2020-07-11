@@ -1,0 +1,171 @@
+{
+	"chance": [
+		{
+			"nom": "Amende pour ivresse",
+			"type": "taxe",
+			"montant": 2000
+		},
+		{
+			"nom": "Amende pour excès de vitesse",
+			"type": "taxe",
+			"montant": 1500
+		},
+		{
+			"nom": "Payer pour frais de scolarité",
+			"type": "taxe",
+			"montant": 15000
+		},
+		{
+			"nom": "Avancez jusqu'à avenue Henri-Martin. Si vous passez par la case DEPART recevez 20000€",
+			"type": "goto",
+			"destination": 24,
+			"direct": true
+		},
+		{
+			"nom": "Avancez jusqu'à boulevard de la Vilette. Si vous passez par la case DEPART recevez 20000€",
+			"type": "goto",
+			"destination": 24,
+			"direct": true
+		},
+		{
+			"nom": "Rendez vous à rue de la Paix",
+			"type": "goto",
+			"destination": 11,
+			"direct": false
+		},
+		{
+			"nom": "Avancez jusqu'à la case départ",
+			"type": "goto",
+			"destination": 40,
+			"direct": true
+		},
+		{
+			"nom": "Rendez vous à la gare de Lyon. Si vous passez par la case DEPART recevez 20000€",
+			"type": "goto",
+			"destination": 15,
+			"direct": true
+		},
+		{
+			"nom": "Interpol vous a attrapé. Avancez tout droit en prison. Ne passez pas par la case DEPART. Ne recevez pas 20000€",
+			"type": "goto",
+			"destination": 10,
+			"direct": false
+		},
+		{
+			"nom": "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle utilisée ou vendue",
+			"type": "prison"
+		},
+		{
+			"nom": "Vous avez gagné au loto. Recevez 10000€",
+			"type": "prime",
+			"montant": 10000
+		},
+		{
+			"nom": "La banque vous verse un dividende de 5000€",
+			"type": "prime",
+			"montant": 5000
+		},
+		{
+			"nom": "Votre immeuble et votre prêt rapportent. Vous devez toucher 15000€",
+			"type": "prime",
+			"montant": 15000
+		},
+		{
+			"nom": "Faites des réparations dans toutes vos propriétés. Versez 2500€ par maison et 10000€ par hotel",
+			"type": "repair",
+			"hotel": 10000,
+			"maison": 2500
+		},
+		{
+			"nom": "Vous êtes imposé pour les réparations de voiries à raison de : 4000€ par maison et 11500€ par hotel",
+			"type": "repair",
+			"hotel": 11500,
+			"maison": 4000
+		},
+		{
+			"nom": "Reculez de 3 cases",
+			"type": "move",
+			"nb": -3
+		}
+	],
+
+	"communaute": [
+		{
+			"nom": "Payez votre police d'assurance",
+			"type": "taxe",
+			"montant": 5000
+		},
+		{
+			"nom": "Payez la note du médecin",
+			"type": "taxe",
+			"montant": 5000
+		},
+		{
+			"nom": "Payez à l'hopital 10000€",
+			"type": "taxe",
+			"montant": 10000
+		},
+		{
+			"nom": "Payez une contravention de 1000€",
+			"type": "taxe",
+			"montant": 1000
+		},
+		{
+			"nom": "Retourner à boulevard de Belleville",
+			"type": "goto",
+			"destination": 1,
+			"direct": false
+		},
+		{
+			"nom": "Rendez-vous jusqu'à la case départ",
+			"type": "goto",
+			"destination": 40,
+			"direct": true
+		},
+		{
+			"nom": "Interpol vous a attrapé. Avancez tout droit en prison. Ne passez par la case DEPART. Ne recevez pas 20000€",
+			"type": "goto",
+			"destination": 10,
+			"direct": false
+		},
+		{
+			"nom": "Vous recevez une subvention de l'Union Européenne de 2000€",
+			"type": "prime",
+			"montant": 2000
+		},
+		{
+			"nom": "On vous accorde la bourse Erasmus. Recevez 10000€",
+			"type": "prime",
+			"montant": 10000
+		},
+		{
+			"nom": "Vous avez remporté le grand prix de l'Eurovision de la chanson. recevez 2500€",
+			"type": "prime",
+			"montant": 2500
+		},
+		{
+			"nom": "Erreur de la banque en votre faveur. Recevez 20000€",
+			"type": "prime",
+			"montant": 20000
+		},
+		{
+			"nom": "Vous héritez de 10000€",
+			"type": "prime",
+			"montant": 10000
+		},
+		{
+			"nom": "La cour Européenne de justice statue en votre faveur. Recevez 5000€",
+			"type": "prime",
+			"montant": 5000
+		},
+		{
+			"nom": "Vous avez gagné le deuxième prix de beauté. Recevez 1000€",
+			"type": "prime",
+			"montant": 1000
+		},
+		{
+			"nom": "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle utilisée ou vendue",
+			"type": "prison"
+		}
+	]
+}

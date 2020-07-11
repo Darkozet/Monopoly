@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Monopoly.Views.MainPage"
+             NavigationPage.HasNavigationBar="false" >
+
+    <Grid BackgroundColor="White">
+        <!--Definition du Grid-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--L'image du jeu-->
+        <Image
+            Grid.Row="1"
+            Margin="40"
+            Source="PersoMonopoly.jpg"/>
+        
+        <!--Zone de lancement de la partie-->
+        <StackLayout Grid.Row="2">
+
+            <Label 
+                Text="Bonjour et bienvenue sur le ZiMonopoly !&#x0a;Veuillez apuyer sur commencer afin de lancer la ZiPartie !"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="center"
+                Margin="40,20,40,0"/>
+
+            <Entry
+                x:Name="EnPseudo"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Margin="100,40,100,0"
+                Placeholder="Pseudonyme"
+                />
+
+            <Button
+                Text="COMMENCER"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Margin="80,40,80,0"
+                Clicked="OnBtnCommencerClicked"/>
+        </StackLayout>
+
+        <!--Chargement-->
+        <Image
+            x:Name="imgLoad"
+            Grid.Row="3"
+            VerticalOptions="Center"
+            Source="Load.jpg"
+            IsVisible="false"/>
+    </Grid>
+</ContentPage>

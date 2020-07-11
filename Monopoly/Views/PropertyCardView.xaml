@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Monopoly.Views.PropertyCardView"
+             NavigationPage.HasNavigationBar="false" >
+    
+    <ContentView.Content>
+        <Grid BackgroundColor="White">
+            <!--Definition du Grid-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+
+            <!--Titre-->
+            <Label 
+                x:Name="lblTitleCard"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                BackgroundColor="Red"
+                Margin="5"
+                Text="Avenue des gros Noobz"
+                FontAttributes="Bold"
+                FontSize="22"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            
+            <!--Loyer de base-->
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin="5,0,0,0"
+                Text="Loyer - Terrain nu :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+            <Label
+                x:Name="lblLoyerBase"
+                Grid.Row="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 10000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <!--1 Maison-->
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5,0,0,0"
+                Text="- 1 Maison :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+            <Label
+                x:Name="lblLoyerMaison1"
+                Grid.Row="2"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 20000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+            <!--2 Maison-->
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5,0,0,0"
+                Text="- 2 Maison :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+            <Label
+                x:Name="lblLoyerMaison2"
+                Grid.Row="3"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 30000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+
+            <!--3 Maison-->
+            <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5,0,0,0"
+                Text="- 3 Maison :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+            <Label
+                x:Name="lblLoyerMaison3"
+                Grid.Row="4"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 40000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+
+            <!--4 Maison-->
+            <Label
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5,0,0,0"
+                Text="- 4 Maison :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+            <Label
+                x:Name="lblLoyerMaison4"
+                Grid.Row="5"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 50000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+
+
+            <!--Hotel-->
+            <Label
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="5,0,0,0"
+                Text="- HOTEL :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                x:Name="lblLoyerHotel"
+                Grid.Row="6"
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Margin="0,0,5,0"
+                Text="M 60000"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            
+            <!--Prix de la maison-->
+            <Label
+                x:Name="lblCoutMaison"
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Margin="5,0,5,0"
+                Text="Prix d'une maison :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="center"/>
+
+            <!--Prix de l'hotel-->
+            <Label
+                x:Name="lblCoutHotel"
+                Grid.Row="9"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Margin="5,0,5,0"
+                Text="Prix de l'hotel :"
+                FontSize="15"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="center"/>
+
+            <!--Prix de la carte-->
+            <Label
+                x:Name="lblCoutProprite"
+                Grid.Row="11"
+                Grid.Column="0"
+                Grid.ColumnSpan="6"
+                Margin="5,0,5,5"
+                Text="Prix de la carte"
+                FontAttributes="Bold"
+                FontSize="20"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="center"/>
+            
+        </Grid>
+    </ContentView.Content>
+</ContentView>

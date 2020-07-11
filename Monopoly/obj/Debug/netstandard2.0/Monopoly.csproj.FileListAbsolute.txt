@@ -1,0 +1,74 @@
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.deps.json
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.pdb
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfoInputs.cache
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfo.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.pdb
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csproj.CoreCompileInputs.cache
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\bin\Debug\netstandard2.0\Monopoly.deps.json
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\bin\Debug\netstandard2.0\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\bin\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\bin\Debug\netstandard2.0\Monopoly.pdb
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.csprojAssemblyReference.cache
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfoInputs.cache
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfo.cs
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.csproj.CoreCompileInputs.cache
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly - Backup 2\Monopoly\obj\Debug\netstandard2.0\Monopoly.pdb
+E:\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csprojAssemblyReference.cache
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.deps.json
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.dll
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.pdb
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csprojAssemblyReference.cache
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfoInputs.cache
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfo.cs
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.dll
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.pdb
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\PlayerPage.xaml.g.cs
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csproj.CoreCompileInputs.cache
+E:\Documents\Joris\Autre\Developpement\Monopoly_M1\Monopoly\Monopoly\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.deps.json
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.dll
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\bin\Debug\netstandard2.0\ref\Monopoly.dll
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.pdb
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csprojAssemblyReference.cache
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\PlayerPage.xaml.g.cs
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfoInputs.cache
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfo.cs
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csproj.CoreCompileInputs.cache
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.dll
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\ref\Monopoly.dll
+D:\Pro\CS2I\4e Annee\Projet IOT\Xamarin\Tests\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.pdb
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csprojAssemblyReference.cache
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\PlayerPage.xaml.g.cs
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfoInputs.cache
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.AssemblyInfo.cs
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.csproj.CoreCompileInputs.cache
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.dll
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Monopoly.pdb
+E:\Travail\ProjetCabret\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.deps.json
+E:\Travail\ProjetCabret\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.dll
+E:\Travail\ProjetCabret\Monopoly\Monopoly\bin\Debug\netstandard2.0\ref\Monopoly.dll
+E:\Travail\ProjetCabret\Monopoly\Monopoly\bin\Debug\netstandard2.0\Monopoly.pdb
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Travail\ProjetCabret\Monopoly\Monopoly\obj\Debug\netstandard2.0\Views\PropertyCardView.xaml.g.cs

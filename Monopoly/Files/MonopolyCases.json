@@ -1,0 +1,309 @@
+{
+	"case": [
+		{
+			"numero": 40,
+			"type": "depart",
+			"axeX": 2,
+			"axeY": 0,
+			"nom": "Départ"
+		},
+		{
+			"numero": 10,
+			"type": "special",
+			"axeX": 3,
+			"axeY": 0,
+			"nom": "Simple visite"
+		},
+		{
+			"numero": 20,
+			"type": "parc",
+			"axeX": 0,
+			"axeY": 0,
+			"nom": "Parc Gratuit",
+			"gain": 0
+		},
+		{
+			"numero": 30,
+			"type": "prison",
+			"axeX": 1,
+			"axeY": 0,
+			"nom": "Allez en prison"
+		},
+		{
+			"numero": 5,
+			"type": "gare",
+			"axeX": 2,
+			"axeY": 5,
+			"nom": "Gare Montparnasse"
+		},
+		{
+			"numero": 15,
+			"type": "gare",
+			"axeX": 3,
+			"axeY": 5,
+			"nom": "Gare de Lyon"
+		},
+		{
+			"numero": 25,
+			"type": "gare",
+			"axeX": 0,
+			"axeY": 5,
+			"nom": "Gare du Nord"
+		},
+		{
+			"numero": 35,
+			"type": "gare",
+			"axeX": 1,
+			"axeY": 5,
+			"nom": "Gare Saint-Lazare"
+		},
+		{
+			"numero": 12,
+			"type": "compagnie",
+			"axeX": 3,
+			"axeY": 2,
+			"nom": "Compagnie de distribution d'électricité"
+		},
+		{
+			"numero": 28,
+			"type": "compagnie",
+			"axeX": 0,
+			"axeY": 8,
+			"nom": "Compagnie de distribution des eaux",
+		},
+		{
+			"numero": 4,
+			"type": "taxe",
+			"axeX": 1,
+			"axeY": 8,
+			"nom": "Taxe de luxe",
+			"prix": 100
+		},
+		{
+			"numero": 38,
+			"type": "taxe",
+			"axeX": 2,
+			"axeY": 4,
+			"nom": "Impots sur le revenu",
+			"prix": 20000
+		},
+		{
+			"numero": 2,
+			"type": "communaute",
+			"nom": "Caisse de communaute",
+			"axeX": 2,
+			"axeY": 2
+		},
+		{
+			"numero": 17,
+			"type": "communaute",
+			"nom": "Caisse de communaute",
+			"axeX": 1,
+			"axeY": 3
+		},
+		{
+			"numero": 33,
+			"type": "communaute",
+			"nom": "Caisse de communaute",
+			"axeX": 3,
+			"axeY": 7
+		},
+		{
+			"numero": 7,
+			"type": "chance",
+			"nom": "Chance",
+			"axeX": 1,
+			"axeY": 6
+		},
+		{
+			"numero": 22,
+			"type": "chance",
+			"nom": "Chance",
+			"axeX": 2,
+			"axeY": 7
+		},
+		{
+			"numero": 36,
+			"type": "chance",
+			"nom": "Chance",
+			"axeX": 0,
+			"axeY": 2
+		},
+		{
+			"numero": 1,
+			"type": "propriete",
+			"groupe": "Violet",
+			"axeX": 2,
+			"axeY": 1,
+			"nom": "Boulevard de Belleville"
+		},
+		{
+			"numero": 3,
+			"type": "propriete",
+			"groupe": "Violet",
+			"axeX": 2,
+			"axeY": 3,
+			"nom": "Rue Lecourbe"
+		},
+		{
+			"numero": 6,
+			"type": "propriete",
+			"groupe": "Bleu clair",
+			"axeX": 2,
+			"axeY": 6,
+			"nom": "Rue de Vaugirard"
+		},
+		{
+			"numero": 8,
+			"type": "propriete",
+			"groupe": "Bleu clair",
+			"axeX": 2,
+			"axeY": 8,
+			"nom": "Rue de Courcelles"
+		},
+		{
+			"numero": 9,
+			"type": "propriete",
+			"groupe": "Bleu clair",
+			"axeX": 2,
+			"axeY": 9,
+			"nom": "Avenue de la république"
+		},
+		{
+			"numero": 11,
+			"type": "propriete",
+			"groupe": "Violet clair",
+			"axeX": 3,
+			"axeY": 1,
+			"nom": "Boulevard de la Vilette"
+		},
+		{
+			"numero": 13,
+			"type": "propriete",
+			"groupe": "Violet clair",
+			"axeX": 3,
+			"axeY": 3,
+			"nom": "Avenue de Neuilly"
+		},
+		{
+			"numero": 14,
+			"type": "propriete",
+			"groupe": "Violet clair",
+			"axeX": 3,
+			"axeY": 4,
+			"nom": "Rue de Paradis"
+		},
+		{
+			"numero": 16,
+			"type": "propriete",
+			"groupe": "Orange",
+			"axeX": 3,
+			"axeY": 6,
+			"nom": "Avenue Mozart"
+		},
+		{
+			"numero": 18,
+			"type": "propriete",
+			"groupe": "Orange",
+			"axeX": 3,
+			"axeY": 8,
+			"nom": "Boulevard Saint-Michel"
+		},
+		{
+			"numero": 19,
+			"type": "propriete",
+			"groupe": "Orange",
+			"axeX": 3,
+			"axeY": 9,
+			"nom": "Plage Pigalle"
+		},
+		{
+			"numero": 21,
+			"type": "propriete",
+			"groupe": "Rouge",
+			"axeX": 0,
+			"axeY": 1,
+			"nom": "Avenue Matignon"
+		},
+		{
+			"numero": 23,
+			"type": "propriete",
+			"groupe": "Rouge",
+			"axeX": 0,
+			"axeY": 3,
+			"nom": "Boulevard Malesherbes"
+		},
+		{
+			"numero": 24,
+			"type": "propriete",
+			"groupe": "Rouge",
+			"axeX": 0,
+			"axeY": 4,
+			"nom": "Avenue Henri-Martin"
+		},
+		{
+			"numero": 26,
+			"type": "propriete",
+			"groupe": "Jaune",
+			"axeX": 0,
+			"axeY": 6,
+			"nom": "Faubourg Saint-Honoré"
+		},
+		{
+			"numero": 27,
+			"type": "propriete",
+			"groupe": "Jaune",
+			"axeX": 0,
+			"axeY": 7,
+			"nom": "Place de la bourse"
+		},
+		{
+			"numero": 29,
+			"type": "propriete",
+			"groupe": "Jaune",
+			"axeX": 0,
+			"axeY": 9,
+			"nom": "Rue de la fayette"
+		},
+		{
+			"numero": 31,
+			"type": "propriete",
+			"groupe": "Vert",
+			"axeX": 1,
+			"axeY": 1,
+			"nom": "avenue de Breteuil"
+		},
+		{
+			"numero": 32,
+			"type": "propriete",
+			"groupe": "Vert",
+			"axeX": 1,
+			"axeY": 2,
+			"nom": "Avenue Foch"
+		},
+		{
+			"numero": 34,
+			"type": "propriete",
+			"groupe": "Vert",
+			"axeX": 1,
+			"axeY": 4,
+			"nom": "Boulevard des Capucines"
+		},
+		{
+			"numero": 37,
+			"type": "propriete",
+			"groupe": "Bleu",
+			"axeX": 1,
+			"axeY": 7,
+			"nom": "Avenue des Champs-Elysée"
+		},
+		{
+			"numero": 39,
+			"type": "propriete",
+			"groupe": "Bleu",
+			"axeX": 1,
+			"axeY": 9,
+			"nom": "Rue de la Paix"
+		}
+	]
+}
