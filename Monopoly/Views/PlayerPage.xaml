@@ -120,7 +120,7 @@
                 Opacity="0"
                 Margin="10"
                 Source="Dice1.png"/>
-            
+
             <Image
                 x:Name="imgResultDe2"
                 Grid.Column="2"
@@ -128,24 +128,6 @@
                 Margin="10"
                 Opacity="0"
                 Source="Dice1.png"/>
-
-            <!--Chargement-->
-            <!--<Image
-                x:Name="imgLoad"
-                Grid.Column="1"
-                Grid.Row="2"
-                VerticalOptions="Center"
-                Source="Load.jpg"/>
-            
-            <Label
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                Grid.Row="2"
-                Text="Déplacement de votre pion en cours !"
-                FontSize="Medium"
-                HorizontalTextAlignment="Center"
-                VerticalTextAlignment="Center"
-                VerticalOptions="Center"/>-->
 
             <Button
                 x:Name="btnAcheter"
@@ -164,13 +146,21 @@
                 Text="Fin du tour"
                 IsVisible="false"
                 Clicked="btnFinTour_Clicked"/>
-
-
-
         </Grid>
         
             <!--Affichage d'une carte-->
+        <Grid 
+            x:Name="bvProperty" 
+            Grid.Row="1"
+            BackgroundColor="Black" 
+            IsVisible="false">
+            
+            <StackLayout 
+                x:Name="slProperty"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
 
+        </Grid>
 
         <!--Propriete du joueur-->
         <BoxView Grid.Row="2" BackgroundColor="Black"/>
@@ -179,18 +169,17 @@
             Grid.Row="2"
             HorizontalOptions="FillAndExpand" 
             Orientation="Horizontal" 
-            VerticalOptions="Fill"
             Margin="2"
             BackgroundColor="White">
             <StackLayout 
                 x:Name="StackGallery" 
                 Orientation="Horizontal" 
                 HorizontalOptions="Center">
-                <Image HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" BackgroundColor="Red" IsVisible="false">
+                <!--<Image HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="40" WidthRequest="40" BackgroundColor="Red" IsVisible="false">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnImageNameTapped" NumberOfTapsRequired="1"/>
                     </Image.GestureRecognizers>
-                </Image>
+                </Image>-->
 
                 <Label
                     x:Name="lblNoProperty"

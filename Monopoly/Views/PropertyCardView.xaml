@@ -49,6 +49,7 @@
             
             <!--Loyer de base-->
             <Label
+                x:Name="lblBase"
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
@@ -70,6 +71,7 @@
 
             <!--1 Maison-->
             <Label
+                x:Name="lblMaison1"
                 Grid.Row="2"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
@@ -91,6 +93,7 @@
 
             <!--2 Maison-->
             <Label
+                x:Name="lblMaison2"
                 Grid.Row="3"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
@@ -113,6 +116,7 @@
 
             <!--3 Maison-->
             <Label
+                x:Name="lblMaison3"
                 Grid.Row="4"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
@@ -135,6 +139,7 @@
 
             <!--4 Maison-->
             <Label
+                x:Name="lblMaison4"
                 Grid.Row="5"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
@@ -157,6 +162,7 @@
 
             <!--Hotel-->
             <Label
+                x:Name="lblHotel"
                 Grid.Row="6"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"

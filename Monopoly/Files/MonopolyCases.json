@@ -3,22 +3,22 @@
 		{
 			"numero": 40,
 			"type": "depart",
-			"axeX": 2,
+			"axeX": 0,
 			"axeY": 0,
 			"nom": "Départ"
 		},
 		{
 			"numero": 10,
 			"type": "special",
-			"axeX": 3,
+			"axeX": 5000,
 			"axeY": 0,
 			"nom": "Simple visite"
 		},
 		{
 			"numero": 20,
 			"type": "parc",
-			"axeX": 0,
-			"axeY": 0,
+			"axeX": 5000,
+			"axeY": 5000,
 			"nom": "Parc Gratuit",
 			"gain": 0
 		},
@@ -74,8 +74,8 @@
 		{
 			"numero": 4,
 			"type": "taxe",
-			"axeX": 1,
-			"axeY": 8,
+			"axeX": 2000,
+			"axeY": 0,
 			"nom": "Taxe de luxe",
 			"prix": 100
 		},
@@ -91,8 +91,8 @@
 			"numero": 2,
 			"type": "communaute",
 			"nom": "Caisse de communaute",
-			"axeX": 2,
-			"axeY": 2
+			"axeX": 1000,
+			"axeY": 0
 		},
 		{
 			"numero": 17,
@@ -112,8 +112,8 @@
 			"numero": 7,
 			"type": "chance",
 			"nom": "Chance",
-			"axeX": 1,
-			"axeY": 6
+			"axeX": 3500,
+			"axeY": 0
 		},
 		{
 			"numero": 22,
@@ -133,88 +133,88 @@
 			"numero": 1,
 			"type": "propriete",
 			"groupe": "Violet",
-			"axeX": 2,
-			"axeY": 1,
+			"axeX": 500,
+			"axeY": 0,
 			"nom": "Boulevard de Belleville"
 		},
 		{
 			"numero": 3,
 			"type": "propriete",
 			"groupe": "Violet",
-			"axeX": 2,
-			"axeY": 3,
+			"axeX": 1500,
+			"axeY": 0,
 			"nom": "Rue Lecourbe"
 		},
 		{
 			"numero": 6,
 			"type": "propriete",
 			"groupe": "Bleu clair",
-			"axeX": 2,
-			"axeY": 6,
+			"axeX": 3000,
+			"axeY": 0,
 			"nom": "Rue de Vaugirard"
 		},
 		{
 			"numero": 8,
 			"type": "propriete",
 			"groupe": "Bleu clair",
-			"axeX": 2,
-			"axeY": 8,
+			"axeX": 4000,
+			"axeY": 0,
 			"nom": "Rue de Courcelles"
 		},
 		{
 			"numero": 9,
 			"type": "propriete",
 			"groupe": "Bleu clair",
-			"axeX": 2,
-			"axeY": 9,
+			"axeX": 4500,
+			"axeY": 0,
 			"nom": "Avenue de la république"
 		},
 		{
 			"numero": 11,
 			"type": "propriete",
 			"groupe": "Violet clair",
-			"axeX": 3,
-			"axeY": 1,
+			"axeX": 5000,
+			"axeY": 500,
 			"nom": "Boulevard de la Vilette"
 		},
 		{
 			"numero": 13,
 			"type": "propriete",
 			"groupe": "Violet clair",
-			"axeX": 3,
-			"axeY": 3,
+			"axeX": 5000,
+			"axeY": 1500,
 			"nom": "Avenue de Neuilly"
 		},
 		{
 			"numero": 14,
 			"type": "propriete",
 			"groupe": "Violet clair",
-			"axeX": 3,
-			"axeY": 4,
+			"axeX": 5000,
+			"axeY": 2000,
 			"nom": "Rue de Paradis"
 		},
 		{
 			"numero": 16,
 			"type": "propriete",
 			"groupe": "Orange",
-			"axeX": 3,
-			"axeY": 6,
+			"axeX": 5000,
+			"axeY": 3000,
 			"nom": "Avenue Mozart"
 		},
 		{
 			"numero": 18,
 			"type": "propriete",
 			"groupe": "Orange",
-			"axeX": 3,
-			"axeY": 8,
+			"axeX": 5000,
+			"axeY": 4000,
 			"nom": "Boulevard Saint-Michel"
 		},
 		{
 			"numero": 19,
 			"type": "propriete",
 			"groupe": "Orange",
-			"axeX": 3,
-			"axeY": 9,
+			"axeX": 5000,
+			"axeY": 4500,
 			"nom": "Plage Pigalle"
 		},
 		{

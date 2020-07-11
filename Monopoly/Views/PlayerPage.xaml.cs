@@ -4,8 +4,11 @@ using Monopoly.Classes.Card;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -22,6 +25,12 @@ namespace Monopoly.Views
         #region Variables
         Classes.Game game;
         Classes.Player player1;
+
+        // Connect avec Raspi
+        int port = 5900;
+        string server = "10.3.141.1"; 
+        Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.IP);
+
         #endregion
 
         public PlayerPage(string strPseudo)
@@ -55,11 +64,58 @@ namespace Monopoly.Views
             {
                 this.lblNoProperty.IsVisible = false;
 
+                this.StackGallery.Children.Clear();
                 // Street
                 foreach (var item in player.liStreet)
                 {
-                    PropertyCardView pcv = new PropertyCardView(item);
-                    this.StackGallery.Children.Add(pcv);
+                    Label lbl = new Label()
+                    {
+                        Text = item.nom,
+                        BackgroundColor = Color.FromHex(item.colors[0]),
+                        VerticalOptions = LayoutOptions.Center
+                    };
+
+                    var tapGestureRecognizer = new TapGestureRecognizer();
+                    tapGestureRecognizer.Tapped += (s, e) => {
+                        Label lblClicked = s as Label;
+                        // handle the tap
+                        DisiplayStreet(item);
+                    };
+                    lbl.GestureRecognizers.Add(tapGestureRecognizer);
+
+                    //PropertyCardView pcv = new PropertyCardView(item, false);
+                    ////pcv.VerticalOptions.Alignment = LayoutAlignment.Fill;
+                    //pcv.WidthRequest = (int)(this.StackGallery.Width * 0.33);
+                    this.StackGallery.Children.Add(lbl);
+                }
+            }
+        }
+
+        private void DisiplayStreet(Street street)
+        {
+            if(!this.bvProperty.IsVisible)
+            {
+                this.bvProperty.IsVisible = true;
+                PropertyCardView pcv = new PropertyCardView(street, true);
+                pcv.VerticalOptions = LayoutOptions.FillAndExpand;
+                this.slProperty.Children.Add(pcv);
+            }
+            else
+            {
+                PropertyCardView actualCard = this.slProperty.Children[0] as PropertyCardView;
+
+                this.slProperty.Children.Clear();
+
+                if (street.nom == actualCard.strName)
+                {
+                    this.bvProperty.IsVisible = false;
+                }
+                else
+                {
+                    this.bvProperty.IsVisible = true;
+                    PropertyCardView pcv = new PropertyCardView(street, true);
+                    pcv.VerticalOptions = LayoutOptions.FillAndExpand;
+                    this.slProperty.Children.Add(pcv);
                 }
             }
         }
@@ -150,7 +206,7 @@ namespace Monopoly.Views
             this.imgResultDe2.RotationY = 0;
 
             // Modifier square player
-            this.MovePlayer(NumberDice1 + NumberDice2);
+            int iMove = this.MovePlayer(NumberDice1 + NumberDice2);
 
             // Affichage de la case d'arrivée
             this.lblResultDice.Text = "Vous avez fait " + (NumberDice1 + NumberDice2).ToString() + Environment.NewLine +
@@ -168,6 +224,10 @@ namespace Monopoly.Views
                 this.imgResultDe2.FadeTo(1, 2000),
                 this.imgResultDe2.ScaleTo(dScale2 * 1.5, 2000),
                 this.imgResultDe2.RotateYTo(3600, 2000));
+
+            // Deplacer pion
+            Classes.Board.Square square = GetSQuare(iMove);
+            LauncheInformations(square.axeX, square.axeY);
 
             // On rend invisible le content de lancer de dés
             this.ContentLaunchDice.IsVisible = false;
@@ -240,15 +300,67 @@ namespace Monopoly.Views
         //
         #region Joueur
         // Déplacer le joueur
-        private void MovePlayer(int iSumDice)
+        private int MovePlayer(int iSumDice)
         {
             // Calculer la position du nouveau square
             int iNewSquare = this.player1.square.numero + iSumDice;
             iNewSquare = (iNewSquare > 40) ? iNewSquare - 40 : iNewSquare;
 
+            Classes.Board.Square square = GetSQuare(iNewSquare);
+
             // Modifier la square du player
-            this.player1.square = GetSQuare(iNewSquare);
+            this.player1.square = square;
+
+            return iNewSquare;
         }
+
+        /**********************************************************************/
+        private void LauncheInformations(string strText)
+        {
+
+        }
+        private void LauncheInformations(int x, int y)
+        {
+            try
+            {
+                // connection
+                System.Net.IPAddress ipAdd = System.Net.IPAddress.Parse(server);
+                System.Net.IPEndPoint remoteEP = new IPEndPoint(ipAdd, port);
+                clientSocket.Connect(remoteEP);
+                if (clientSocket.Connected)
+                {
+                    byte[] byData;
+
+                    byData = Encoding.UTF8.GetBytes("YDebut du deplacement");
+                    clientSocket.Send(byData); Thread.Sleep(3000);
+
+                    byData = Encoding.UTF8.GetBytes("W");
+                    clientSocket.Send(byData); Thread.Sleep(1000);
+
+                    byData = Encoding.UTF8.GetBytes("Zx" + x.ToString());
+                    clientSocket.Send(byData); Thread.Sleep(2000);
+                    byData = Encoding.UTF8.GetBytes("Zy" + y.ToString());
+                    clientSocket.Send(byData); Thread.Sleep(2000);
+                    byData = Encoding.UTF8.GetBytes("Zmx");
+                    clientSocket.Send(byData); Thread.Sleep(3000);
+                    //byData = Encoding.UTF8.GetBytes("Zmy");
+                    //clientSocket.Send(byData); Thread.Sleep(3000);
+
+                    byData = Encoding.UTF8.GetBytes("W");
+                    clientSocket.Send(byData); Thread.Sleep(1000);
+
+
+                    byData = Encoding.UTF8.GetBytes("YDeplacement termine"); Thread.Sleep(3000);
+                    clientSocket.Send(byData);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        /**********************************************************************/
 
         // Proposer Action
         private void PlayerAction(Player player)
@@ -358,6 +470,7 @@ namespace Monopoly.Views
 
                 // Reset affichage
                 this.InitInfosPlayer();
+                this.btnAcheter.IsVisible = false;
             }
             else // if it's equal to Cancel
             {
